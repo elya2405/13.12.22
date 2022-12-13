@@ -66,3 +66,20 @@
     font-family: Georgia, "Times New Roman", Times, serif;
   }
 }
+
+.example-3 img {
+  float: left;
+  width: 100%;
+  max-width: 400px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  height: 200px;
+
+  object-fit: cover; /*не выризает и не сплющивает*/
+}
+
+@media screen and (max-width: 600px) {
+  .example-3 img {
+    max-width: none;
+  }
+}
